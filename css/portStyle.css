@@ -1,0 +1,143 @@
+/*font-family: 'Orbitron', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+:root{
+    --black: #000814;
+    --darknavy: rgb(0, 29, 61);
+    --navy: rgb(0, 53, 102);
+    --gold: #FFC300;
+    --lightgold: #FFD60A;
+    --grey: #E5E5E5;
+    --white: #FFFFFF;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    position: fixed;
+    background-color: var(--darknavy);
+    
+    width: 10%;
+    height: 100vh;
+    opacity: 1;
+}
+
+.navbar ul li{
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    font-size: 0.75em;
+    list-style: none;
+    padding: 5em 2em;
+    text-align: center;
+    
+    
+}
+
+.navbar ul li a{
+    color: var(--grey);
+    text-decoration: none;
+}
+
+.content{
+    display: block;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+/* Styling for all the content section */
+.section-style{
+    background-color: var(--darknavy);
+    height: 100vh;
+    width: 90%;
+    position: relative;
+}
+
+/* intro card content styling */
+.intro-content {
+    background-color: var(--navy);
+    height: 75vh;
+    width: 75%;
+    /* positioning */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+
+/*about card content styling */
+.about-content {
+    background-color: var(--navy);
+    height: 75vh;
+    width: 75%;
+    /* positioning */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+
+/* work card content styling */
+.work-content {
+    background-color: var(--navy);
+    height: 75vh;
+    width: 75%;
+    /* positioning */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    height: 75vh;
+    width: 75%;
+    /* research position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.project-card{
+    box-sizing: border-box;
+    height: 300px;
+    width: 30%;
+    padding: 20px;
+    background-color: var(--gold);
+    margin: 0.5em;
+    border-radius: 14px;
+    transition: 0.5s;
+}
+
+.project-card:hover{
+    background-color: var(--lightgold);
+}
